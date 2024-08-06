@@ -12,8 +12,8 @@ CREATE TABLE "User" (
 -- CreateTable
 CREATE TABLE "Barbershop" (
     "id" TEXT NOT NULL,
-    "email" TEXT NOT NULL,
     "name" TEXT NOT NULL,
+    "address" TEXT NOT NULL,
     "phones" TEXT[],
     "description" TEXT NOT NULL,
     "imageUrl" TEXT NOT NULL,
