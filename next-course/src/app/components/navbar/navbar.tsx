@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { NavItems } from './nav-item/nav-item'
+import { cn } from '../../../helpers/cn'
 
 const NavBar = () => {
   return (
