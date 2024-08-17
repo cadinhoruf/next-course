@@ -27,7 +27,7 @@ const listItens: NavItem[] = [
   {
     name: 'Top 10',
     icon: BiSolidMedal,
-    link: '/top10'
+    link: '/top-10'
   },
   {
     name: 'Walkthroughs',
