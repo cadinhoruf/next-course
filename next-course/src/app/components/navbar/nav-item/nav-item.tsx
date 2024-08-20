@@ -1,11 +1,11 @@
-import { FaGamepad, FaRoute } from 'react-icons/fa'
-import { GoHomeFill } from 'react-icons/go'
-import { BiSolidMedal } from 'react-icons/bi'
-import { FaFaceSmile } from 'react-icons/fa6'
-import Link from 'next/link'
 import { cn } from '@/helpers/cn'
-import { NavItem } from './types'
+import Link from 'next/link'
+import { BiSolidMedal } from 'react-icons/bi'
+import { FaGamepad, FaRoute } from 'react-icons/fa'
+import { FaFaceSmile } from 'react-icons/fa6'
+import { GoHomeFill } from 'react-icons/go'
 import { NavItemLink } from './nav-item-link/nav-item-link'
+import { NavItem } from './types'
 
 const listItens: NavItem[] = [
   {
@@ -33,13 +33,13 @@ const listItens: NavItem[] = [
 export const NavItems = () => {
   return (
     <div className='flex flex-col h-full'>
-      <ul className='flex-grow my-4 border-t border-indigo-400/20 hover:border-indigo-400/40'>
+      <ul className='flex-grow border-indigo-400/20 hover:border-indigo-400/40 my-4 border-t'>
         {listItens.map((item: NavItem, index: number) => (
-          <NavItemLink item={item} index={index} />
+          <NavItemLink item={item} key={index} />
         ))}
       </ul>
 
-      <ul className='my-4 border-t border-indigo-400/20 hover:border-indigo-400/40'>
+      <ul className='border-indigo-400/20 hover:border-indigo-400/40 my-4 border-t'>
         <Link
           href='/user'
           className={cn(

@@ -1,8 +1,8 @@
+import { cn } from '@/helpers/cn'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import './globals.css'
 import { NavBar } from './components'
-import { cn } from '@/helpers/cn'
+import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={cn('flex gap-2 antialiased bg-slate-890', inter.className)}>
+      <body className={cn('antialiased bg-slate-890 text-white', inter.className)}>
         <NavBar />
         {children}
       </body>
